@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+.mobile {
+    display: none;
+}
+header .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: normal;
+}
+header .logo span {
+   font-weight: bold;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1%;
+    align-items: center;
+    width: calc(500px - 8vw);
+}
+
+@media only screen and (max-width: 7in) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    header nav {
+        width: 100%;
+        margin: 3%;
+    }
+}
