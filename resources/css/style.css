@@ -212,82 +212,6 @@ footer #rights p {
     margin-left: calc(7px + 0.2vw);
 }
 
-/* windowed */
-
-@media only screen and (max-width: 1300px) and (min-width: 950px) {
-    h1 {
-        font-weight: bold;
-        font-size: calc(35px - 0.2vw)
-    }
-    h2 {
-        font-weight: bold;
-        font-size: calc(23px - 0.05vw);
-    }
-    p, .link{
-      font-size: calc(20px - 0.5vw)
-    }
-    #main #content {
-        margin-left: calc(40px + 1vw);
-        width: 40%;
-    }
-    #main #content button {
-        font-size: 2vw;
-    }
-}
-
-/* tablet */
-
-@media only screen and (max-width: 950px) and (min-width: 5in) {
-    header nav {
-        font-size: calc(11px + 0.35vw);
-        max-width: 58%;
-    }
-    
-    h1 {
-        font-size: calc(25px + 0.3vw);
-        font-weight: bold;
-    }
-    h2 {
-        font-weight: bold;
-        font-size: calc(15px + 0.1vw);
-    }
-    h3 {
-        font-size: calc(17px - 0.2vw)
-    }
-    p, .link {
-       font-size: calc(12px + 0.5vw)
-    }
-    #main img {
-        width: 60%;
-    }
-    #main #content {
-        margin-left: calc(40px + 1vw);
-        width: 37%;
-    }
-    #main #content button {
-        height: 30px;
-        font-size: 2vw;
-    }
-    #learning #container {
-        flex-flow: column no-wrap;
-    }
-    #learning #container .box {
-       display: flex;
-       justify-content: flex-start;
-       width: 100%;
-    }
-    #learning #container .box .teext {
-        display: flex;
-        flex-direction: column;
-    }
-    #learning #container .box .teext h3 {
-        font-size: calc(23px - 0.2vw)
-    }
-    #learning #container .box img {
-        width: 60%;
-     }
-}
-
 /* phone */
 
 @media only screen and (max-width: 5in) {
@@ -377,3 +301,81 @@ footer #rights p {
         margin: 0;
     }
 }
+
+/* tablet */
+
+@media only screen and (max-width: 950px) and (min-width: 5in) {
+    header nav {
+        font-size: calc(11px + 0.35vw);
+        max-width: 58%;
+    }
+    
+    h1 {
+        font-size: calc(25px + 0.3vw);
+        font-weight: bold;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: calc(15px + 0.1vw);
+    }
+    h3 {
+        font-size: calc(17px - 0.2vw)
+    }
+    p, .link {
+       font-size: calc(12px + 0.5vw)
+    }
+    #main img {
+        width: 60%;
+    }
+    #main #content {
+        margin-left: calc(40px + 1vw);
+        width: 37%;
+    }
+    #main #content button {
+        height: 30px;
+        font-size: 2vw;
+    }
+    #learning #container {
+        flex-flow: column no-wrap;
+    }
+    #learning #container .box {
+       display: flex;
+       justify-content: flex-start;
+       width: 100%;
+    }
+    #learning #container .box .teext {
+        display: flex;
+        flex-direction: column;
+    }
+    #learning #container .box .teext h3 {
+        font-size: calc(23px - 0.2vw)
+    }
+    #learning #container .box img {
+        width: 60%;
+     }
+}
+
+
+/* windowed */
+
+@media only screen and (max-width: 1300px) and (min-width: 950px) {
+    h1 {
+        font-weight: bold;
+        font-size: calc(35px - 0.2vw)
+    }
+    h2 {
+        font-weight: bold;
+        font-size: calc(23px - 0.05vw);
+    }
+    p, .link{
+      font-size: calc(20px - 0.5vw)
+    }
+    #main #content {
+        margin-left: calc(40px + 1vw);
+        width: 40%;
+    }
+    #main #content button {
+        font-size: 2vw;
+    }
+}
+
