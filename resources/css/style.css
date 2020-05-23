@@ -134,9 +134,6 @@ header nav {
         font-weight: bold;
         font-size: calc(23px - 0.05vw);
     }
-    h3 {
-       font-weight: bold;
-    }
     p, .link{
       font-size: calc(20px - 0.5vw)
     }
@@ -172,7 +169,7 @@ header nav {
         font-size: calc(15px + 0.1vw);
     }
     h3 {
-       font-weight: bold;
+        font-size: calc(17px - 0.2vw)
     }
     p, .link {
        font-size: calc(12px + 0.5vw)
