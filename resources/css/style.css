@@ -214,7 +214,7 @@ footer #rights p {
 
 /* phone */
 
-@media only screen and (max-width: 5in) {
+@media (pointer:coarse) {
     .desktop {
         display: none !important;
     }
