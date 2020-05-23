@@ -6,20 +6,24 @@ html {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
 }
-h1 {
+h1{
+    /*font-size: 2.5vw; */
+    font-size: calc(51px - 0.2vw);
     font-weight: bold;
-    font-size: 3vw;
 }
 h2 {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: calc(26px - 0.05vw);
 }
 h3 {
    font-weight: bold;
-   font-size: 1.1vw;
+   font-size: calc(23px - 0.2vw);
 }
-p {
-    font-size: 0.9vw;
+p, .link{
+    font-size: calc(25.5px - 0.5vw);
+}
+.link {
+    color: rgb(112, 112, 235);
 }
 header {
     display: flex;
@@ -55,7 +59,7 @@ header nav {
     width: calc(500px - 8vw);
 }
 #main {
-    background-color: #cccccc;
+    background-color: #ececec;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -82,22 +86,59 @@ header nav {
     padding: 8px 0;
     font-size: 1.2vw;
 }
+#practice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#practice #left {
+    width: 60%;
+    padding: calc(20px + 1vw) calc(14px + 1vw);
+}
+#practice #left img {
+    width: 100%;
+}
+#practice #left h1, #practice #left p {
+    margin: calc(14px + 1vw) 0;
+}
+#practice #right {
+    width: 40%;
+}
+#practice #right .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background-color 400ms linear 50ms;
+    border: 1px solid #ececec;
+    width: 100%;
+}
+#practice #right img {
+    width: 35%;
+    height: auto;
+    margin: calc(13px + 0.5vw);
+}
+#practice #right .row:hover {
+    background-color: #ececec;
+}
+#practice #right .content > * {
+    margin: calc(10px + 0.5vw) 0;
+}
 /* windowed */
-@media only screen and (max-width: 1000px) and (min-width: 700px) {
+
+@media only screen and (max-width: 1300px) and (min-width: 800px) {
     h1 {
         font-weight: bold;
-        font-size: 4vw;
+        font-size: calc(35px - 0.2vw)
     }
     h2 {
         font-weight: bold;
-        font-size: 2vw;
+        font-size: calc(23px - 0.05vw);
     }
     h3 {
        font-weight: bold;
-       font-size: 1.1vw;
     }
-    p {
-        font-size: 0.9vw;
+    p, .link{
+      font-size: calc(20px - 0.5vw)
     }
     #main #content {
         margin-left: calc(40px + 1vw);
@@ -113,27 +154,28 @@ header nav {
         font-size: 1.2vw;
     }
 }
+
 /* tablet */
-@media only screen and (max-width: 700px) and (min-width: 5.5in) {
+
+@media only screen and (max-width: 800px) and (min-width: 5.5in) {
     header nav {
         font-size: 2.5vw;
         width: 60%;
     }
     
     h1 {
+        font-size: calc(25px + 0.3vw);
         font-weight: bold;
-        font-size: 5vw;
     }
     h2 {
         font-weight: bold;
-        font-size: 2vw;
+        font-size: calc(15px + 0.1vw);
     }
     h3 {
        font-weight: bold;
-       font-size: 1.1vw;
     }
-    p {
-        font-size: 0.9vw;
+    p, .link {
+       font-size: calc(12px + 0.5vw)
     }
     #main img {
         width: 60%;
@@ -152,7 +194,9 @@ header nav {
         font-size: 2vw;
     }
 }
+
 /* phone */
+
 @media only screen and (max-width: 5.5in) {
     .desktop {
         display: none;
@@ -179,15 +223,15 @@ header nav {
     p {
         font-size: 3vw;
     }
+    .link {
+        font-size: 3vw;
+    }
     #main {
         flex-direction: column;
         padding: 0;
     }
     #main img {
         width: 100%;
-    }
-    #main  #content > * {
-        margin: calc(14px + 1vw) 0;
     }
     #main #content {
         margin: 4px 0;
@@ -196,6 +240,20 @@ header nav {
     #main #content button {
         height: 37px;
         font-size: 2.5vw;
+    }
+
+    #practice #right {
+        width: 100%;
+    }
+    #practice #right .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #practice #right img {
+        width: 90%;
+    }
+    #practice #right .content {
+        margin-left: calc(13px + 0.5vw);
     }
     
 }
