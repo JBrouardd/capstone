@@ -314,6 +314,9 @@ footer #rights p {
         width: 100%;
         margin: 0;
     }
+    footer {
+        height: 150px;
+    }
 }
 
 /* tablet */
