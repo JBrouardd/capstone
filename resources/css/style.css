@@ -214,7 +214,7 @@ footer #rights p {
 
 /* phone */
 
-@media (pointer:coarse) {
+@media (pointer:coarse) { 
     .desktop {
         display: none !important;
     }
@@ -222,18 +222,18 @@ footer #rights p {
         display: block;
     }
     header {
-        height: 2cm;
+        height: 4cm;
     }
     #main-content, footer {
         position: relative;
-        top: 2cm;
+        top: 4cm;
     }
     header nav {
         width: 100%;
         margin: 3%;
     }
     header nav img {
-        height: 1.8cm;
+        height: 2.5cm;
         width: auto;
     }
     h1 {
@@ -262,13 +262,15 @@ footer #rights p {
         width: 100%;
     }
     #main #content {
-        margin: 4px 0;
+        margin: 0;
         width: 90%;
-        min-height: 20cm;
+    }
+    #main #content > * {
+        margin: calc(40px + 1vw) 0;
     }
     #main #content button {
-        height: 37px;
-        font-size: 2.5vw;
+        height: 90px;
+        font-size: 5vw;
     }
 
     #practice #right {
@@ -370,7 +372,7 @@ footer #rights p {
 
 /* windowed */
 
-@media only screen and (max-width: 1300px) and (min-width: 950px) {
+@media only screen and (max-width: 1300px) and (min-width: 950px) and (pointer: fine) {
     h1 {
         font-weight: bold;
         font-size: calc(35px - 0.2vw)
