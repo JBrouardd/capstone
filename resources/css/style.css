@@ -300,9 +300,10 @@ footer #rights p {
     }
     #learning #container .box {
        width: 100%;
-       margin: calc(5px + 0.2vw);
+       margin: calc(7px + 0.5vw);
        transition: background-color 400ms linear 50ms;
        border: 1px solid #ececec;
+       padding: calc(5px + 0.2vw);
     }
      #learning #container .box .teext > * {
          margin: calc(10px + 0.5vw);
