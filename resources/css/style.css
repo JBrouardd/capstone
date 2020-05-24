@@ -286,6 +286,9 @@ footer #rights p {
         width: 100%;
         margin: 0;
     }
+    #practice #right .content > * {
+        margin: calc(20px + 0.5vw) 0;
+    }
 
     #learning {
         padding: calc(17px + 1vw) calc(10px + 2vw);
