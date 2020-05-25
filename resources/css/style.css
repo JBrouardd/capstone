@@ -213,7 +213,7 @@ footer #rights p {
 
 /* phone */
 
-@media (pointer:coarse) and (orientation:portrait) and (max-device-width: 5in) { 
+@media (pointer:coarse) and (orientation:portrait) and (max-width: 5in) { 
     .desktop {
         display: none !important;
     }
@@ -221,18 +221,18 @@ footer #rights p {
         display: block;
     }
     header {
-        height: 4cm;
+        height: 2cm;
     }
     #main-content, footer {
         position: relative;
-        top: 4cm;
+        top: 2cm;
     }
     header nav {
         width: 100%;
         margin: 3%;
     }
     header nav img {
-        height: 2.5cm;
+        height: 1.5cm;
         width: auto;
     }
     h1 {
@@ -264,11 +264,8 @@ footer #rights p {
         margin: 0;
         width: 90%;
     }
-    #main #content > * {
-        margin: calc(40px + 1vw) 0;
-    }
     #main #content button {
-        height: 90px;
+        height: 50px;
         font-size: 5vw;
     }
 
@@ -318,7 +315,7 @@ footer #rights p {
         margin: 0;
     }
     footer {
-        height: 150px;
+        height: 70px;
     }
 }
 
